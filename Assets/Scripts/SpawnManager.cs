@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SnowballSpawn : MonoBehaviour
+public class SpawnManager : MonoBehaviour
 {
-    public GameObject[] wayPoint;
+    [Header("Spawners")]
+    public GameObject[] SnowmenWaypoints;
+    //snowballs spawn at snowmen transform.position
+    public GameObject[] snowMen;
+    [Header("SnowBalls")]
     public GameObject snowBall;
     public int num;
     public float spawnTimer;
@@ -29,8 +33,8 @@ public class SnowballSpawn : MonoBehaviour
     {
        num = Random.Range(0,3);
 
-       
-        Instantiate(snowBall, wayPoint[num].transform.position, Quaternion.identity);
+       Vector3 spawnPos = new Vector3(0,0,-3);
+        Instantiate(snowBall, snowMen[num].transform.position + spawnPos, Quaternion.identity);
     }
    
 }
