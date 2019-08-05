@@ -7,8 +7,7 @@ public class SnowManManager : MonoBehaviour
     public GameObject[] snowMen;
     public GameObject[] detectors;
     public int curSnowMan;
-    public int snowmanMax = 3;
-    public int snowmanNum;
+    public bool[] snowmanAlive = new bool[3];
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +24,7 @@ public class SnowManManager : MonoBehaviour
                 Movement();
             }
         }
-       
+
     }
 
     void Movement()
@@ -36,8 +35,11 @@ public class SnowManManager : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        other.CompareTag("SnowMan1");
-        other.CompareTag("SnowMan2");
-        other.CompareTag("SnowMan3");
+        if (other.gameObject.tag == "SnowMan1") { snowmanAlive[1] = true; }
+        if (other.gameObject.tag == "SnowMan2") { snowmanAlive[2] = true; }
+        if (other.gameObject.tag == "SnowMan3") { snowmanAlive[3] = true; }
+
+
+
     }
 }
