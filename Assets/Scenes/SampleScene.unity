@@ -291,7 +291,7 @@ GameObject:
   m_Layer: 0
   m_Name: SnowmanWaypoint2
   m_TagString: Untagged
-  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -490,6 +490,94 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &756102478
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 756102480}
+  - component: {fileID: 756102479}
+  m_Layer: 0
+  m_Name: MBox
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &756102479
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756102478}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 1, z: 15}
+  m_Center: {x: 0, y: 1, z: 6}
+--- !u!4 &756102480
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756102478}
+  m_LocalRotation: {x: -0.116584, y: -0, z: -0, w: 0.9931809}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1311069678}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -13.39, y: 0, z: 0}
+--- !u!1 &785502416
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 785502418}
+  - component: {fileID: 785502417}
+  m_Layer: 0
+  m_Name: LBox
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &785502417
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785502416}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 1, z: 15}
+  m_Center: {x: 0, y: 1, z: 6}
+--- !u!4 &785502418
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785502416}
+  m_LocalRotation: {x: -0.116584, y: -0, z: -0, w: 0.9931809}
+  m_LocalPosition: {x: -7, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1311069678}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -13.39, y: 0, z: 0}
 --- !u!1 &874224294
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,7 +684,7 @@ GameObject:
   - component: {fileID: 1104499322}
   m_Layer: 0
   m_Name: snowplane
-  m_TagString: snowplane
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -686,7 +774,7 @@ GameObject:
   m_Layer: 0
   m_Name: SnowmanWaypoint1
   m_TagString: Untagged
-  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -717,7 +805,7 @@ GameObject:
   m_Layer: 0
   m_Name: SnowMenManager
   m_TagString: Untagged
-  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -737,7 +825,13 @@ MonoBehaviour:
   - {fileID: 3986893218459389981, guid: 059acb5377231c04eb3a4f68de9ce9a0, type: 3}
   - {fileID: 2781132062371189059, guid: 6a28c9462447c554b8ef618c6f378c7d, type: 3}
   - {fileID: 8227596363837040777, guid: 5737edc1fa795794089d70710bd9c785, type: 3}
+  detectors:
+  - {fileID: 785502416}
+  - {fileID: 756102478}
+  - {fileID: 1880883648}
   curSnowMan: 0
+  snowmanMax: 3
+  snowmanNum: 0
 --- !u!4 &1311069678
 Transform:
   m_ObjectHideFlags: 0
@@ -748,7 +842,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 785502418}
+  - {fileID: 756102480}
+  - {fileID: 1880883650}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -808,7 +905,7 @@ GameObject:
   m_Layer: 0
   m_Name: SnowmanWaypoint3
   m_TagString: Untagged
-  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -881,6 +978,50 @@ MonoBehaviour:
     type: 3}
   num: 0
   spawnTimer: 0
+--- !u!1 &1880883648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1880883650}
+  - component: {fileID: 1880883649}
+  m_Layer: 0
+  m_Name: RBox
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1880883649
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880883648}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 1, z: 15}
+  m_Center: {x: 0, y: 1, z: 6}
+--- !u!4 &1880883650
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880883648}
+  m_LocalRotation: {x: -0.116584, y: -0, z: -0, w: 0.9931809}
+  m_LocalPosition: {x: 7, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1311069678}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -13.39, y: 0, z: 0}
 --- !u!1 &1995152329
 GameObject:
   m_ObjectHideFlags: 0

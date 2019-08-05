@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5172574747540730078}
   m_Layer: 0
   m_Name: Snowman2
-  m_TagString: Untagged
+  m_TagString: SnowMan2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

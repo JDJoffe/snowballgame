@@ -4,7 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - snowplane
+  - SnowMan1
+  - SnowMan2
+  - SnowMan3
   layers:
   - Default
   - TransparentFX
