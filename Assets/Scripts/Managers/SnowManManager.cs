@@ -35,9 +35,9 @@ public class SnowManManager : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "SnowMan1") { snowmanAlive[1] = true; }
-        if (other.gameObject.tag == "SnowMan2") { snowmanAlive[2] = true; }
-        if (other.gameObject.tag == "SnowMan3") { snowmanAlive[3] = true; }
+        if (other.gameObject.CompareTag( "SnowMan1")) { snowmanAlive[0] = true; }
+        if (other.gameObject.tag == "SnowMan2") { snowmanAlive[1] = true; }
+        if (other.gameObject.tag == "SnowMan3") { snowmanAlive[2] = true; }
 
 
 

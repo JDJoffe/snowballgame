@@ -200,5 +200,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 6614447422101100755, guid: 6c76fdad5093f5143ae15d16476c7a4f,
+        type: 3}
+      propertyPath: snowMen.Array.data[0]
+      value: 
+      objectReference: {fileID: 3986893218459389981, guid: 059acb5377231c04eb3a4f68de9ce9a0,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c76fdad5093f5143ae15d16476c7a4f, type: 3}

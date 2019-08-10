@@ -10,7 +10,7 @@ public class SpawnManager : MonoBehaviour
     public GameObject[] snowMen;
     [Header("SnowBalls")]
     public GameObject snowBall;
-    public int num;
+    public int snowmanNum;
     public float spawnTimer;
     // Start is called before the first frame update
     void Start()
@@ -31,10 +31,10 @@ public class SpawnManager : MonoBehaviour
     }
     public void Spawner()
     {
-       num = Random.Range(0,3);
+       snowmanNum = Random.Range(0,3);
 
        Vector3 spawnPos = new Vector3(0,0,-3);
-        Instantiate(snowBall, snowMen[num].transform.position + spawnPos, Quaternion.identity);
+        Instantiate(snowBall, snowMen[snowmanNum].transform.position + spawnPos, Quaternion.identity);
     }
    
 }
