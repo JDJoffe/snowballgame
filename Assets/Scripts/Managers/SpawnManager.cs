@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
+    public Rigidbody rigid;
     [Header("Spawners")]
     public GameObject[] SnowmenWaypoints;
     //snowballs spawn at snowmen transform.position
@@ -24,7 +25,7 @@ public class SpawnManager : MonoBehaviour
     void Update()
     {
         spawnTimer += Time.deltaTime;
-        if (spawnTimer > 3)
+        if (spawnTimer > 2)
         {
             Spawner();
             spawnTimer = 0;
@@ -37,6 +38,7 @@ public class SpawnManager : MonoBehaviour
 
        Vector3 spawnPos = new Vector3(0,0,-3);
         Instantiate(snowBall, snowMen[snowmanNum].transform.position + spawnPos, Quaternion.identity);
+      
     }
    
 }
