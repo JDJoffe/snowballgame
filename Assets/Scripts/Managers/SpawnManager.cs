@@ -15,7 +15,9 @@ public class SpawnManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+        snowMen[1] = GameObject.Find("Snowman1");
+        snowMen[2] = GameObject.Find("Snowman2");
+        snowMen[0] = GameObject.Find("Snowman3");
     }
 
     // Update is called once per frame
